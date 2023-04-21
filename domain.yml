@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - create_task
+
+responses:
+  utter_greet:
+  - text: "你好！吃了么？"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "再见"
+
+  utter_iamabot:
+  - text: "我是一个机器人,来自Rasa."
+
+  utter_create_task:
+  - text: "已帮你创建了任务"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
