@@ -1,4 +1,4 @@
-version: "3.1"
+version: "2.0"
 
 intents:
   - greet
@@ -8,7 +8,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - create_task
 
 responses:
   utter_greet:
@@ -30,8 +29,6 @@ responses:
   utter_iamabot:
   - text: "我是一个机器人,来自Rasa."
 
-  utter_create_task:
-  - text: "已帮你创建了任务"
 
 session_config:
   session_expiration_time: 60
